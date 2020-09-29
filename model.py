@@ -12,8 +12,9 @@ class Donor(Model):
         database = db
 
 class Donation(Model):
-    value = IntegerField()
     donor = ForeignKeyField(Donor, backref='donations')
+    value = IntegerField()
+
 
     class Meta:
         database = db
