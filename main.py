@@ -5,8 +5,6 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from peewee import DoesNotExist
 
 from model import Donation, Donor 
-import pysnooper
-
 
 app = Flask(__name__)
 
@@ -19,7 +17,6 @@ def all():
     donations = Donation.select()
     return render_template('donations.jinja2', donations=donations)
 
-@pysnooper.snoop(depth=3)
 @app.route('/new-donation/', methods=['GET', 'POST'])
 def new_donation():
     if request.method == 'POST':
