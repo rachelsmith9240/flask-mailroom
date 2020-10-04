@@ -1,6 +1,6 @@
 # Flask Mailroom Application
 
-Running at [http://afternoon-reef-51666.herokuapp.com/donations/](http://afternoon-reef-51666.herokuapp.com/donations/).
+Running at [http://young-mountain-50429.herokuapp.com/donations/](http://young-mountain-50429.herokuapp.com/donations/).
 
 ## Your Task
 
